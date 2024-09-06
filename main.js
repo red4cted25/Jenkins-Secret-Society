@@ -23,21 +23,27 @@ http
                     res.end(data);
                 });
                 break;
-            case '/puzzle3': 
+            case '/speaknoevil': 
                 // Puzzle 3
                 fs.readFile("./puzzle3.html", (err, data) => {
                     res.end(data);
                 });
                 break;
-            case '/puzzle4': 
+            case '/hal9000': 
                 // Puzzle 4
                 fs.readFile("./puzzle4.html", (err, data) => {
                     res.end(data);
                 });
                 break;
-            case '/puzzle5': 
+            case '/secret': 
                 // Puzzle 5
                 fs.readFile("./puzzle5.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
+            case '/simon': 
+                // Puzzle 6
+                fs.readFile("./simon.html", (err, data) => {
                     res.end(data);
                 });
                 break;
