@@ -42,12 +42,12 @@ http
                 });
                 break;
             case '/simon': 
-                // Puzzle 6
+                // Puzzle Game
                 fs.readFile("./simon.html", (err, data) => {
                     res.end(data);
                 });
                 break;
-            case '/puzzle6': 
+            case '/danger': 
                 // Puzzle 6
                 fs.readFile("./puzzle6.html", (err, data) => {
                     res.end(data);
