@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crimson Dawn | Hints</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #000, #290000, #5a0000, #8b0000, #b30000);
+            font-family: 'Cinzel', serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Container for the hint section */
+        .hint-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 3vw;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .hint-btn {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-transform: uppercase;
+            margin: 15px;
+            display: block;
+            width: 100%;
+        }
+
+        .hint-btn:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="hint-container">
+        <h1>Hints</h1>
+        <button class="hint-btn" id="hint1" onclick="revealHint('hint1', 'The answer lies in the positioning.')">Mind/Matter</button>
+        <button class="hint-btn" id="hint2" onclick="revealHint('hint2', 'Look for what is missing.')">Monkeys</button>
+        <button class="hint-btn" id="hint3" onclick="revealHint('hint3', 'Its hidden in plain sight.')">Sorry, Dave</button>
+        <button class="hint-btn" id="hint4" onclick="revealHint('hint4', 'The source code holds the key.')">Here somewhere</button>
+        <button class="hint-btn" id="hint5" onclick="revealHint('hint5', 'The clues are invisible on the page.')">Hidden clues</button>
+        <button class="hint-btn" id="hint6" onclick="revealHint('hint6', 'Look on the previous page.')">Danger</button>
+        <button class="hint-btn" id="hint7" onclick="revealHint('hint7', 'Complete the memory game.')">Simon</button>
+    </div>
+    <script>
+        // Function to change the button text to the hint
+        function revealHint(buttonId, hintText) {
+            document.getElementById(buttonId).innerHTML = hintText;
+            document.getElementById(buttonId).disabled = true; // Disable the button after the hint is revealed
+            document.getElementById(buttonId).style.backgroundColor = 'darkred'; // Change the button color to indicate that it was clicked
+        }
+    </script>
+</body>
+</html>

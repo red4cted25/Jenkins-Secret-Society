@@ -11,6 +11,13 @@ http
                     res.end(data);
                 });
                 break;
+            case '/hints':
+            case '/hint': 
+                // Hints
+                fs.readFile("./hint.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
             case '/thedoor': 
                 // Puzzle 1
                 fs.readFile("./puzzle1.html", (err, data) => {
@@ -35,7 +42,8 @@ http
                     res.end(data);
                 });
                 break;
-            case '/secret' || '/escape': 
+            case '/secret':
+            case '/escape': 
                 // Puzzle 5
                 fs.readFile("./puzzle5.html", (err, data) => {
                     res.end(data);
