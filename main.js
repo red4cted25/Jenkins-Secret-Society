@@ -35,7 +35,7 @@ http
                     res.end(data);
                 });
                 break;
-            case '/secret': 
+            case '/secret' || '/escape': 
                 // Puzzle 5
                 fs.readFile("./puzzle5.html", (err, data) => {
                     res.end(data);
@@ -50,6 +50,12 @@ http
             case '/danger': 
                 // Puzzle 6
                 fs.readFile("./puzzle6.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
+            case '/broodmother':
+                // Final Choice
+                fs.readFile("./broodmother.html", (err, data) => {
                     res.end(data);
                 });
                 break;

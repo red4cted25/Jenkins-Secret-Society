@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crimson Dawn | The Broodmother</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(#0D0D0D, #990000);
+            color: white;
+            font-family: 'Cinzel', serif;
+            height: 100vh;
+        }
+    
+        #heart-container {
+            margin: 20px;
+        }
+    
+        #heart-container img {
+            width: 200px;
+            height: auto;
+        }
+    
+        #text-container {
+            margin: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        #choice-buttons {
+            margin-top: 20px;
+            display: none; /* Hidden until text finishes */
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    
+        button:hover {
+            background-color: darkred;
+        }
+        </style>
+</head>
+<body>
+    <h1>The Broodmother</h1>
+
+    <div id="heart-container">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a09197d9-eba7-4153-9b04-b7d0002e2633/ddkz8yx-7366e65e-4c9c-45e0-b427-c4579798c9e9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EwOTE5N2Q5LWViYTctNDE1My05YjA0LWI3ZDAwMDJlMjYzM1wvZGRrejh5eC03MzY2ZTY1ZS00YzljLTQ1ZTAtYjQyNy1jNDU3OTc5OGM5ZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.egvOTPuujZklIxfv6mpK-6a-vFgaDz2t9RjDVx2A2Co" alt="Beating Heart">
+    </div>
+    <div id="text-container">
+        <p id="text"></p>
+    </div>
+
+    <div id="choice-buttons">
+        <button id="stab-button">Stab the Heart</button>
+        <button id="join-button">Become One</button>
+    </div>
+
+    <script>
+        let text = "Before you stands the heart of the Crimson Dawn. Pulsing, alive, it holds the power of the broodmother—the source of all. To destroy it is to sever your ties forever. To embrace it is to become part of something greater, something eternal. What will you choose?";
+        let index = 0;
+        const speed = 50; // Typing speed in milliseconds
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            } else {
+                document.getElementById("choice-buttons").style.display = "block"; // Show buttons after typing finishes
+            }
+        }
+
+        // Start typing effect
+        window.onload = typeWriter;
+
+        // Button actions
+        document.getElementById('stab-button').addEventListener('click', function() {
+            alert('You stab the heart. The Crimson Dawn crumbles around you.');
+        });
+
+        document.getElementById('join-button').addEventListener('click', function() {
+            alert('You become one with the heart, merging into the essence of the Crimson Dawn.');
+        });
+    </script>
+</body>
+</html>

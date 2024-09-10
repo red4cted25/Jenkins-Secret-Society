@@ -3,19 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Crimson Dawn | Puzzle 6</title>
+    <title>Dead End</title>
     <style>
         body {
             background: linear-gradient(#0D0D0D, #990000);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
-            font-family: Arial, sans-serif;
+            color: crimson;
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            padding: 50px;
         }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #hidden-hint {
+            display: none;
+            margin-top: 50px;
+            color: #2B2B2B;
+            font-size: 1vw;
+            font-weight: 600;
+        }
+
+        .glitch {
+            color: crimson;
+            font-size: 50px;
+            text-shadow: 2px 2px #FF0000;
+            position: relative;
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px #FF0000, -2px -2px #0000FF;
+                transform: skew(0deg);
+            }
+            20% {
+                text-shadow: 5px 5px #FF0000, -5px -5px #0000FF;
+                transform: skew(2deg);
+            }
+            40% {
+                text-shadow: -2px -2px #FF0000, 2px 2px #0000FF;
+                transform: skew(-1deg);
+            }
+            60% {
+                text-shadow: 3px 3px #FF0000, -3px -3px #0000FF;
+                transform: skew(1deg);
+            }
+            80% {
+                text-shadow: -5px -5px #FF0000, 5px 5px #0000FF;
+                transform: skew(3deg);
+            }
+            100% {
+                text-shadow: 2px 2px #FF0000, -2px -2px #0000FF;
+                transform: skew(0deg);
+            }
+        }
+
+        #hidden-message {
+            display: none;
+            color: crimson;
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
+    <h1 class="glitch">Dead End</h1>
+    <p>You have reached a dead end.</p>
+    <p>There is nothing left for you here...</p>
+
+    <!-- Subtle hint that something is hidden -->
+    <p id="hidden-message">Are you sure?</p>
     
+    <div id="hidden-hint">The shadows linger, but a path remains unseen: /escape</div>
+    <script>
+        // Reveal the hidden message when the user spends some time on the page
+        setTimeout(() => {
+            document.getElementById("hidden-message").style.display = "block";
+        }, 5000); // After 5 seconds, reveal the hidden message
+
+        document.getElementById("hidden-message").addEventListener("click", function() {
+            document.getElementById("hidden-hint").style.display = "block";
+        });
+    </script>
 </body>
 </html>
