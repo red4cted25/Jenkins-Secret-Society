@@ -53,6 +53,7 @@ The server will start on `http://localhost:5000`.
 Here is a list of available routes and their associated files:
 
 * `/` - Home page (`index.html`)
+* `/hint` or `/hints` - Home page (`hint.html`)
 * `/thedoor` - Puzzle 1 (`puzzle1.html`)
 * `/mindovermatter` - Puzzle 2 (`puzzle2.html`)
 * `/speaknoevil` - Puzzle 3 (`puzzle3.html`)
