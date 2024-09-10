@@ -6,22 +6,48 @@
     <title>The Crimson Dawn | Home</title>
     <style>
         body {
-            background: linear-gradient(#0D0D0D, #990000);
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000, #290000, #5a0000, #8b0000, #b30000);
+            font-family: 'Cinzel', serif;
+            color: white;
+            text-align: center;
+            }
+        /* Container for the text */
+        .intro-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+    
+        button:hover {
+            background-color: darkred;
         }
     </style>
 </head>
 <body>
-    <h1>The Crimson Dawn</h1>
-    <p>Can you find your way in?</p>
-    <div id="buttons">
+    <div class="intro-container">
+        <h1>The Crimson Dawn</h1>
+        <p>Wandering through the forest, you are in search of the secret society of The Crimson Dawn. <br>You are here to solve the following puzzles and get to the center of the society.</p>
+        <p>All of the puzzle answers will be in this form: alloneword</p>
+        <p>Can you find your way in?</p>
         <button onclick="location.href = '/thedoor'">Enter</button>
     </div>
 </body>
