@@ -67,6 +67,24 @@ http
                     res.end(data);
                 });
                 break;
+            case '/prime':
+                // JS Programmer Puzzle
+                fs.readFile("./prime.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
+            case '/104743':
+                // Stab Heart - End
+                fs.readFile("./stab.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
+            case '/heart':
+                // Become One - End
+                fs.readFile("./heart.html", (err, data) => {
+                    res.end(data);
+                });
+                break;
             default: 
                 // 404 Error
                 fs.readFile("./404.html", (err, data) => {

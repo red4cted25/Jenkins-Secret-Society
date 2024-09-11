@@ -65,7 +65,7 @@
     </div>
 
     <div id="choice-buttons">
-        <button id="stab-button">Stab the Heart</button>
+        <button id="stab-button" onclick="location.href = '/prime'">Stab the Heart</button>
         <button id="join-button">Become One</button>
     </div>
 
@@ -86,15 +86,6 @@
 
         // Start typing effect
         window.onload = typeWriter;
-
-        // Button actions
-        document.getElementById('stab-button').addEventListener('click', function() {
-            alert('You stab the heart. The Crimson Dawn crumbles around you.');
-        });
-
-        document.getElementById('join-button').addEventListener('click', function() {
-            alert('You become one with the heart, merging into the essence of the Crimson Dawn.');
-        });
     </script>
 </body>
 </html>

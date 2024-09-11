@@ -15,9 +15,12 @@ In this immersive experience, you've stumbled upon a magic tome in Old Man Jenki
 * **puzzle3.html**: Puzzle 3 - Sorry, Dave
 * **puzzle4.html**: Puzzle 4 - Here Somewhere
 * **puzzle5.html**: Puzzle 5 - Hidden Clues
-* **simon.html**: Simon Says memory game
+* **simon.html**: Puzzle Game
 * **puzzle6.html**: Puzzle 6 - Danger
-* **broodmother.html**: Final choice page
+* **broodmother.html**: Final Choice
+* **prime.html**: Ending Puzzle
+* **stab.html**: True Ending
+* **heart.html**: Bad Ending
 * **404.html**: Custom 404 error page
 * **main.js**: Node.js server
 
@@ -48,21 +51,39 @@ node main.js
 
 The server will start on `http://localhost:5000`.
 
+
+
 ## Routes
 
 Here is a list of available routes and their associated files:
 
-* `/` - Home page (`index.html`)
-* `/hint` or `/hints` - Home page (`hint.html`)
-* `/thedoor` - Puzzle 1 (`puzzle1.html`)
-* `/mindovermatter` - Puzzle 2 (`puzzle2.html`)
-* `/speaknoevil` - Puzzle 3 (`puzzle3.html`)
-* `/hal9000` - Puzzle 4 (`puzzle4.html`)
-* `/secret` or `/escape` - Puzzle 5 (`puzzle5.html`)
-* `/simon` - Simon Says memory game (`simon.html`)
-* `/danger` - Puzzle 6 (`puzzle6.html`)
-* `/broodmother` - Final choice page (`broodmother.html`)
-* Any other route - 404 error page (`404.html`)
+><details><summary>Home page</summary>`/` - (`index.html`)</details> 
+
+><details><summary>Hint page</summary>`/hint` or `/hints` - (`hint.html`)</details> 
+
+><details><summary>Puzzle 1</summary>`/thedoor` - (`puzzle1.html`)</details> 
+
+><details><summary>Puzzle 2</summary>`/mindovermatter` - (`puzzle2.html`)</details> 
+
+><details><summary>Puzzle 3</summary>`/speaknoevil` - (`puzzle3.html`)</details> 
+
+><details><summary>Puzzle 4</summary>`/hal9000` - (`puzzle4.html`)</details>
+
+><details><summary>Puzzle 5</summary>`/secret` or `/escape` - (`puzzle5.html`)</details>
+
+><details><summary>Puzzle Game</summary>`/simon` - (`simon.html`)</details> 
+
+><details><summary>Puzzle 6</summary>`/danger` - (`puzzle6.html`)</details>  
+
+><details><summary>Final Choice</summary>`/broodmother` - (`broodmother.html`)</details>
+
+><details><summary>Ending Puzzle</summary>`/prime` - (`prime.html`)</details>
+
+><details><summary>True Ending</summary>`/stab` - (`stab.html`)</details>
+
+><details><summary>Bad Ending</summary>`/heart` - (`heart.html`)</details>
+
+> Any other route - 404 error page (`404.html`)
 
 ## Contributing
 

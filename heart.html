@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One with the Heart</title>
+    <style>
+        body {
+            background: linear-gradient(#0D0D0D, #990000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Cinzel', serif;
+            overflow-y: hidden;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            animation: pulse 2.5s infinite;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 3px;
+            color: #e63946;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #f1faee;
+            font-style: italic;
+        }
+
+        .heartbeat {
+            width: 200px;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            opacity: 0.8;
+        }
+
+        .final-text {
+            margin-top: 30px;
+            font-size: 1.4em;
+            color: #e63946;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        #my_audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="my_audio" loop>
+        <source src="https://cdn.discordapp.com/attachments/646904105478127617/1283286270893756511/147204-Human_heartbeat_pulsating_and_throbbing_once.wav?ex=66e270f9&is=66e11f79&hm=3a0e199dbe03d961472e0dca52b042d095cdb66f3cc1b5d121926c620617f88f&" type="audio/wav">
+    </audio>
+    <div class="container">
+        <h1>You Are One with the Heart</h1>
+        <p>
+            The choice is made. The pulse of the heart no longer feels distant—it beats within you. The Crimson Dawn has consumed you, but not in the way you feared.
+        </p>
+        <p>
+            You are no longer separate. Your mind, your body, your essence—all now belong to something greater. You have become part of the whole, woven into the web of the Crimson Dawn's eternal power. 
+            There is peace in surrender, in becoming one.
+        </p>
+        <p>
+            As you merge with the heart, you understand its true nature: an ancient force that sustains itself by uniting those who seek its dark embrace. You feel a serene acceptance. The darkness is no longer something to fear; it is where you belong.
+        </p>
+
+        <img class="heartbeat" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a09197d9-eba7-4153-9b04-b7d0002e2633/ddkz8yx-7366e65e-4c9c-45e0-b427-c4579798c9e9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EwOTE5N2Q5LWViYTctNDE1My05YjA0LWI3ZDAwMDJlMjYzM1wvZGRrejh5eC03MzY2ZTY1ZS00YzljLTQ1ZTAtYjQyNy1jNDU3OTc5OGM5ZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.egvOTPuujZklIxfv6mpK-6a-vFgaDz2t9RjDVx2A2Co" alt="Beating Heart">
+
+        <p class="final-text">
+            In unity, you are eternal. The Crimson Dawn endures through you.
+        </p>
+    </div>
+    <script>
+        document.addEventListener("click", function() {
+            document.getElementById("my_audio").play();
+        })
+    </script>
+</body>
+</html>

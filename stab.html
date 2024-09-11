@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Truth Revealed</title>
+    <style>
+        body {
+            background: linear-gradient(#0D0D0D, #990000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Cinzel', serif;
+            overflow-y: hidden;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
+            width: 85%;
+            max-width: 900px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 3px;
+            color: #e63946;
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.7;
+            color: #f1faee;
+            font-style: italic;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+        }
+
+        p.bold {
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        .revelation {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid #e63946;
+            border-radius: 8px;
+            font-size: 1.5em;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+        }
+
+        .final-text {
+            margin-top: 40px;
+            font-size: 1.4em;
+            color: #e63946;
+        }
+
+        #my_audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="my_audio">
+        <source src="https://cdn.discordapp.com/attachments/646904105478127617/1283286270893756511/147204-Human_heartbeat_pulsating_and_throbbing_once.wav?ex=66e270f9&is=66e11f79&hm=3a0e199dbe03d961472e0dca52b042d095cdb66f3cc1b5d121926c620617f88f&" type="audio/wav">
+    </audio>
+    <div class="container">
+        <h1>The Truth Revealed</h1>
+        <p>You have severed the tie that held the Crimson Dawn together. The veil of illusions falls away, revealing the true purpose of the society: control, not power. The heart was not a symbol of strength, but of dominance, designed to bind those who sought meaning in the darkness.</p>
+        <p class="bold">You have broken free. But at what cost?</p>
+        <p>The Crimson Dawn crumbles, but in its wake, you are left with knowledge too heavy to bear. The truth, once revealed, is a burden you will carry for the rest of your days.</p>
+
+        <div class="revelation">
+            <p>"The Crimson Dawn's purpose was never to guide. It was to subjugate."</p>
+        </div>
+
+        <p class="final-text">The shadows recede, leaving you alone with the truth. There is no going back.</p>
+    </div>
+    <script>
+        let clicks = 0;
+        document.addEventListener("click", function() {
+            if (clicks == 0) {
+                document.getElementById("my_audio").play();
+                clicks++;
+            }
+        });
+    </script>
+</body>
+</html>
